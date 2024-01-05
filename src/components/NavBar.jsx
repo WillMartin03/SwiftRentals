@@ -8,10 +8,10 @@ const NavBar = () => {
 		<div className="w-full h-16 flex justify-evenly p-4 items-center font-semibold">
 			<h1 className="text-xl font-bold">SwiftSide Rentals</h1>
 			<ul className="hidden md:flex gap-4">
-				<li>Home</li>
-				<li>Rent</li>
-				<li>Contact</li>
-				<li>Reviews</li>
+				<a href="home">Home</a>
+				<a href="rent">Rent</a>
+				<a href="contact">Contact</a>
+				<a href="reviews">Reviews</a>
 			</ul>
 			<div className="hidden md:flex gap-4">
 				<button>Sign In</button>
