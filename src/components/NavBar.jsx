@@ -5,17 +5,17 @@ import Button from './Button'
 const NavBar = () => {
 	const [navBarToggled, setNavBarToggled] = useState(false)
 	return (
-		<div className="w-full h-16 flex justify-evenly p-4 items-center font-semibold">
-			<h1 className="text-xl font-bold">SwiftSide Rentals</h1>
+		<div className="flex flex-row justify-between lg:justify-evenly py-6 px-8 items-center font-bold">
+			<h1 className="text-2xl hover:scale-105 duration-500">Swiftride Rentals</h1>
 			<ul className="hidden md:flex gap-4">
-				<a href="home">Home</a>
-				<a href="rent">Rent</a>
-				<a href="contact">Contact</a>
-				<a href="reviews">Reviews</a>
+				<li>Home</li>
+				<li>Rent</li>
+				<li>Contact</li>
+				<li>Reviews</li>
 			</ul>
 			<div className="hidden md:flex gap-4">
 				<button>Sign In</button>
-				<Button text="Register" bgcol="bg-orange-500" shdcol="shadow-orange-500" fontcol="text-white" />
+				<Button text="Register" bgcol="bg-orange-600" shdcol="shadow-orange-500" fontcol="text-white" />
 			</div>
 			<div className="md:hidden flex items-center z-50">
 				{navBarToggled ? <FaTimes size={30} onClick={() => setNavBarToggled(!navBarToggled)} /> : <FaBars size={30} onClick={() => setNavBarToggled(!navBarToggled)} />}
