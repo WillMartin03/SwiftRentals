@@ -1,4 +1,5 @@
 import { useState } from "react"
+import { Link } from 'react-router-dom'
 
 const Rental = () => {
 	const [vehicle, setSelectedVehicle] = useState({
@@ -135,7 +136,7 @@ const Rental = () => {
 									</tr>
 								</tbody>
 							</table>
-							<button className="mt-4 w-full bg-orange-600 py-2 text-white text-xl font-bold hover:scale-105 duration-500 shadow-md shadow-orange-600 hover:shadow-lg hover:shadow-orange-600">Reserve</button>
+							<Link to='/reserve'><button className='mt-4 w-full bg-orange-600 py-2 text-white text-xl font-bold hover:scale-105 duration-500 shadow-md shadow-orange-600 hover:shadow-lg hover:shadow-orange-600'>Reserve Now</button></Link>
 						</div>
 					</>
 				)}
